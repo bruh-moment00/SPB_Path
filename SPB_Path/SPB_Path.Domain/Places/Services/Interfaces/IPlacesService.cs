@@ -10,6 +10,6 @@ namespace SPB_Path.Domain.Places.Services.Interfaces
 {
     public interface IPlacesService
     {
-        public IResult<IEnumerable<Place>> GetPlacesOrder(IEnumerable<Place> places, float time);
+        public IResult<IEnumerable<PlaceView>> GetPath(IEnumerable<Place> places, float time);
     }
 }

@@ -1,6 +1,8 @@
 ﻿using Jane;
+using SPB_Path.Domain.Places.Converters;
 using SPB_Path.Domain.Places.Models;
 using SPB_Path.Domain.Places.Services.Interfaces;
+using SPB_Path.Tools.Extentions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +13,9 @@ namespace SPB_Path.Domain.Places.Services
 {
     public class PlacesService : IPlacesService
     {
-        public IResult<IEnumerable<Place>> GetPlacesOrder(IEnumerable<Place> places, float timeYouHave)
+        public IResult<IEnumerable<PlaceView>> GetPath(IEnumerable<Place> places, float overallTime)
         {
-            throw new NotImplementedException();
+            return Result.Success(places.MakePath(overallTime).ToPlaceViews());
         }
     }
 }

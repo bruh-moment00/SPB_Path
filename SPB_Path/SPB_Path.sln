@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPB_Path.Domain", "SPB_Path
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPB_Path.IoC", "SPB_Path.IoC\SPB_Path.IoC.csproj", "{0E8A1563-79FB-48D4-A5A2-BDA0E8AECCF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPB_Path.Tools", "SPB_Path.Tools\SPB_Path.Tools.csproj", "{46229F19-84CC-4834-955F-4BD0FFFC654F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{0E8A1563-79FB-48D4-A5A2-BDA0E8AECCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E8A1563-79FB-48D4-A5A2-BDA0E8AECCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E8A1563-79FB-48D4-A5A2-BDA0E8AECCF6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46229F19-84CC-4834-955F-4BD0FFFC654F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46229F19-84CC-4834-955F-4BD0FFFC654F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46229F19-84CC-4834-955F-4BD0FFFC654F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46229F19-84CC-4834-955F-4BD0FFFC654F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
