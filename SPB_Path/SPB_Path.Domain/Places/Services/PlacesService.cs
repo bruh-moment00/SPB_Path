@@ -13,9 +13,9 @@ namespace SPB_Path.Domain.Places.Services
 {
     public class PlacesService : IPlacesService
     {
-        public IResult<IEnumerable<PlaceView>> GetPath(IEnumerable<Place> places, float overallTime)
+        public IResult<IEnumerable<PlaceView>> GetPath(IList<Place> places, double overallDays)
         {
-            return Result.Success(places.MakePath(overallTime).ToPlaceViews());
+            return Result.Success(places.MakePath(overallDays).ToPlaceViews());
         }
     }
 }

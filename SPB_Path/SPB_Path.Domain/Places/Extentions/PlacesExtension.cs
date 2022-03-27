@@ -9,25 +9,34 @@ namespace SPB_Path.Tools.Extentions
 {
     public static class PlacesExtension
     {
-        public static IEnumerable<Place> SortByPriority(this IEnumerable<Place> places)
+        public static IList<Place> SortByPriority(this IList<Place> places)
         {
-            return places.OrderBy(p => p.Priority);
+            return (IList<Place>)places.OrderBy(p => p.Priority);
         }
 
-        public static IEnumerable<Place> MakePath(this IEnumerable<Place> places, double overallTime)
+        public static IList<Place> MakePath(this IList<Place> places, double overallDays)
         {
             IList<Place> path = new List<Place>();
             places = places.SortByPriority();
 
-            int daysRemain = (int)(overallTime / 24);
+            double hoursForToday = 24;
 
-            double hoursForToday = (overallTime > 24) ? 24 : overallTime;
-
-            while (daysRemain >= 0)
+            while (overallDays > 0)
             {
-                foreach(Place place in places)
+                for(int i = 0; i < places.Count; i++)
                 {
+                    if(places[i] != null)
+                    {
+                        if (places[i].RequiredTime + 8 <= hoursForToday)
+                        {
+                            path.Add(places[i]);
+                            places[i] = null;
+                        }
+                    }
                 }
+
+                path.Add(new Place("Сон", 8, 0));
+                overallDays--;
             }
 
             return path;

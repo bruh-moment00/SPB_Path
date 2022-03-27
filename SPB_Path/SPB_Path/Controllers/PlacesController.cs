@@ -19,8 +19,8 @@ namespace SPB_Path.API.Controllers
             _placesService = placesService;
         }
         
-        [HttpGet]
-        public IEnumerable<PlaceView> GetOptimalPath([FromBody]IEnumerable<Place> places, float overallTime)
+        [HttpPost]
+        public IEnumerable<PlaceView> GetOptimalPath([FromBody]IList<Place> places, float overallTime)
         {
             return _placesService.GetPath(places, overallTime).Value;
         }

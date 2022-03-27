@@ -8,4 +8,8 @@
     <PackageReference Include="Autofac" Version="6.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SPB_Path.Domain\SPB_Path.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
