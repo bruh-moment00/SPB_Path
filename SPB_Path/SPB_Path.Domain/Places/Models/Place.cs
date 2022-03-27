@@ -13,7 +13,7 @@ namespace SPB_Path.Domain.Places.Models
             Name = name;
             RequiredTime = requiredTime;
             Importance = importance;
-            Priority = Importance / RequiredTime;
+            Priority = Importance / RequiredTime; //Приоритет можно сделать разными способами, достаточно переписать эту строчку
         }
         public string Name { get; set; }
         public double RequiredTime { get; set; }
