@@ -1,3 +1,102 @@
-{
-
-}
+[
+	{
+		"name": "Исаакиевский собор",
+		"requiredTime": 5,
+		"importance": 10
+	},
+	{
+		"name": "Эрмитаж",
+		"requiredTime": 8,
+		"importance": 11
+	},
+	{
+		"name": "Кунсткамера",
+		"requiredTime": 3.5,
+		"importance": 4
+	},
+	{
+		"name": "Петропавловская крепость",
+		"requiredTime": 10,
+		"importance": 7
+	},
+	{
+		"name": "Ленинградский зоопарк",
+		"requiredTime": 9,
+		"importance": 15
+	},
+	{
+		"name": "Медный всадник",
+		"requiredTime": 1,
+		"importance": 17
+	},
+	{
+		"name": "Казанский собор",
+		"requiredTime": 4,
+		"importance": 3
+	},
+	{
+		"name": "Спас на Крови",
+		"requiredTime": 2,
+		"importance": 9
+	},
+	{
+		"name": "Зимний дворец Петра I",
+		"requiredTime": 7,
+		"importance": 12
+	},
+	{
+		"name": "Зоологический музей",
+		"requiredTime": 5.5,
+		"importance": 6
+	},
+	{
+		"name": "Музей обороны и блокады Ленинграда",
+		"requiredTime": 2,
+		"importance": 19
+	},
+	{
+		"name": "Русский музей",
+		"requiredTime": 5,
+		"importance": 8
+	},
+	{
+		"name": "Навестить друзей",
+		"requiredTime": 12,
+		"importance": 20
+	},
+	{
+		"name": "Музей восковых фигур",
+		"requiredTime": 2,
+		"importance": 13
+	},
+	{
+		"name": "Литературно-мемориальный музей Ф.М. Достоевского",
+		"requiredTime": 4,
+		"importance": 2
+	},
+	{
+		"name": "Екатерининский дворец",
+		"requiredTime": 1.5,
+		"importance": 5
+	},
+	{
+		"name": "Петербургский музей кукол",
+		"requiredTime": 1,
+		"importance": 14
+	},
+	{
+		"name": "Музей микроминиатюры «Русский Левша»",
+		"requiredTime": 3,
+		"importance": 18
+	},
+	{
+		"name": "Всероссийский музей А.С. Пушкина и филиалы",
+		"requiredTime": 6,
+		"importance": 1
+	},
+	{
+		"name": "Музей современного искусства Эрарта",
+		"requiredTime": 7,
+		"importance": 16
+	}
+]

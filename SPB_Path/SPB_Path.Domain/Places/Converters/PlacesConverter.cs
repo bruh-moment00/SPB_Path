@@ -14,7 +14,8 @@ namespace SPB_Path.Domain.Places.Converters
             PlaceView placeView = new PlaceView
             {
                 Name = place.Name,
-                RequiredTime = place.RequiredTime
+                RequiredTime = place.RequiredTime,
+                Importance = place.Importance
             };
 
             return placeView;

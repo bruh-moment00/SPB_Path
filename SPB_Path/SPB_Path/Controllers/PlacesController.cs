@@ -20,9 +20,9 @@ namespace SPB_Path.API.Controllers
         }
         
         [HttpPost]
-        public IEnumerable<PlaceView> GetOptimalPath([FromBody]IList<Place> places, float overallTime)
+        public IEnumerable<PlaceView> GetOptimalPath([FromBody]IList<Place> places, double overallDays)
         {
-            return _placesService.GetPath(places, overallTime).Value;
+            return _placesService.GetPath(places, overallDays).Value;
         }
     }
 }

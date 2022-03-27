@@ -10,5 +10,6 @@ namespace SPB_Path.Domain.Places.Models
     {
         public string Name { get; set; }
         public double RequiredTime { get; set; }
+        public double Importance { get; set; }
     }
 }
